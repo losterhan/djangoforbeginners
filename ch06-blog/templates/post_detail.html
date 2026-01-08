@@ -4,5 +4,19 @@
 <div class="post-entry">
  <h2>{{ post.title }}</h2>
  <p>{{ post.body }}</p>
+ <p>作者 {{ post.author }} </p>
+ <!-- <p>发布于 {{ post.created_at|date:"Y年m月d日" }} </p> -->
+ <a href="{% url 'home' %}">← 返回首页</a>
 </div>
 {% endblock content %}
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+    <h2>{{ post.title }}</h2>
+    <p class="meta">发布于 {{ post.author }}</p>
+    <div class="content">{{ post.body }}</div>
+    <a href="{% url 'home' %}">← 返回首页</a>
+</body>
+</html> -->
